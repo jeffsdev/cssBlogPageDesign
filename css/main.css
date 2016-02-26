@@ -356,14 +356,35 @@ th {
 * {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
+.post-title {
+  color: #000; }
+  .post-title:hover {
+    color: #237; }
+
 .container {
   max-width: 1300px;
   margin: auto; }
 
 header {
+  position: relative;
   width: 100%;
   height: 75vh;
-  background: #ccc; }
+  padding-top: 50px;
+  background: #ccc;
+  text-align: center; }
+  header nav {
+    margin: auto;
+    background: #333; }
+    header nav a {
+      display: inline-block;
+      padding: 20px 5%;
+      text-decoration: none;
+      color: #fff; }
+  header .blog-title {
+    margin: 20% auto 0 auto; }
 
 main {
   min-height: 800px;
@@ -374,17 +395,122 @@ section {
   min-height: 700px;
   background: #888;
   padding: 2%; }
+  @media screen and (min-width: 900px) {
+    section {
+      width: 66.66%;
+      display: inline-block; } }
 
 .blogpost {
+  position: relative;
   background: #aaa;
-  min-height: 500px; }
+  min-height: 500px;
+  padding-bottom: 24px;
+  margin-top: 5%; }
+  .blogpost:first-child {
+    margin-top: 0; }
+  .blogpost h1 {
+    padding: 15px 0;
+    margin: 0; }
   .blogpost .featured-image {
     max-width: 100%; }
+  .blogpost .post-data {
+    padding: 15px 5%; }
+    .blogpost .post-data span {
+      margin-right: 15px; }
+      .blogpost .post-data span:last-child {
+        display: block;
+        margin-top: 1em; }
+        @media screen and (min-width: 640px) {
+          .blogpost .post-data span:last-child {
+            display: inline;
+            margin-top: 0;
+            float: right; } }
+  .blogpost .blog-text {
+    padding: 0 5%;
+    margin-top: 25px; }
+    .blogpost .blog-text p:first-child {
+      margin: 0; }
+  .blogpost .post-fader {
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(204, 204, 204, 0) 0%, #cccccc 75%, #cccccc 100%); }
+    .blogpost .post-fader a {
+      display: block;
+      position: relative;
+      text-align: center;
+      top: 60%;
+      font-size: 1.25em;
+      color: #000; }
 
 .sidebar {
   width: 100%;
+  padding: 2%;
   min-height: 400px;
   background: #444; }
+  @media screen and (min-width: 900px) {
+    .sidebar {
+      width: 33.33%;
+      display: inline-block;
+      float: right; } }
+  .sidebar h2 {
+    text-align: center; }
+  .sidebar .about-blogger {
+    border-top: 10px solid #000;
+    width: 75%;
+    padding: 2%;
+    margin: 2% auto;
+    background: #ddd;
+    margin-top: 0; }
+    @media screen and (min-width: 900px) {
+      .sidebar .about-blogger {
+        width: 90%; } }
+    .sidebar .about-blogger .avatar {
+      width: 33.33%;
+      margin: auto; }
+      .sidebar .about-blogger .avatar img {
+        width: 100%;
+        border-radius: 50%; }
+  .sidebar .recent-posts {
+    border-top: 10px solid #000;
+    width: 75%;
+    padding: 2%;
+    margin: 2% auto;
+    background: #ddd; }
+    @media screen and (min-width: 900px) {
+      .sidebar .recent-posts {
+        width: 90%; } }
+    .sidebar .recent-posts ul {
+      list-style: none; }
+      .sidebar .recent-posts ul li {
+        margin: 10px 0; }
+  .sidebar .categories {
+    border-top: 10px solid #000;
+    width: 75%;
+    padding: 2%;
+    margin: 2% auto;
+    background: #ddd; }
+    @media screen and (min-width: 900px) {
+      .sidebar .categories {
+        width: 90%; } }
+    .sidebar .categories ul {
+      list-style: none; }
+      .sidebar .categories ul li {
+        margin: 10px 0; }
+  .sidebar .tags {
+    border-top: 10px solid #000;
+    width: 75%;
+    padding: 2%;
+    margin: 2% auto;
+    background: #ddd; }
+    @media screen and (min-width: 900px) {
+      .sidebar .tags {
+        width: 90%; } }
+    .sidebar .tags ul {
+      list-style: none; }
+      .sidebar .tags ul li {
+        margin: 10px 0; }
 
 footer {
   min-height: 300px;

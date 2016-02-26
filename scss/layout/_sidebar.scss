@@ -1,5 +1,60 @@
+
+
+
 .sidebar {
   width: 100%;
+  padding: 2%;
   min-height: 400px;
   background: #444;
+  @media screen and (min-width: 900px) {
+    width: 33.33%;
+    display: inline-block;
+    float: right;
+  }
+  h2 {
+    text-align: center;
+  }
+  .about-blogger {
+    border-top: 10px solid #000;
+    @include sidebar-box;
+    margin-top: 0;
+    .avatar {
+      width: 33.33%;
+      margin: auto;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .recent-posts {
+    border-top: 10px solid #000;
+    @include sidebar-box;
+    ul {
+      list-style: none;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .categories {
+    border-top: 10px solid #000;
+    @include sidebar-box;
+    ul {
+      list-style: none;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .tags {
+    border-top: 10px solid #000;
+    @include sidebar-box;
+    ul {
+      list-style: none;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
 }
