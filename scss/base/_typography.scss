@@ -8,3 +8,16 @@ a {
     color: #237;
   }
 }
+
+.blog-text {
+  p {
+    line-height: 2em;
+  }
+}
+
+.comments {
+  p,
+  span {
+    font-size: 0.8em;
+  }
+}

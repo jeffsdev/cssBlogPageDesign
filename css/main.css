@@ -364,6 +364,35 @@ a {
   .post-title:hover {
     color: #237; }
 
+.blog-text p {
+  line-height: 2em; }
+
+.comments p,
+.comments span {
+  font-size: 0.8em; }
+
+.comments {
+  width: 90%;
+  margin: auto; }
+  .comments img,
+  .comments h5,
+  .comments span:first-child {
+    display: inline-block;
+    vertical-align: middle; }
+  .comments h5 {
+    margin: 0; }
+  .comments ul {
+    list-style: none;
+    padding: 0; }
+    .comments ul li {
+      background: #ddd;
+      margin: 10px;
+      padding-bottom: 5px; }
+      .comments ul li p {
+        padding-left: 5px; }
+      .comments ul li span {
+        padding: 5px 10px; }
+
 .container {
   max-width: 1300px;
   margin: auto; }
@@ -430,19 +459,10 @@ section {
     margin-top: 25px; }
     .blogpost .blog-text p:first-child {
       margin: 0; }
-  .blogpost .post-fader {
-    position: absolute;
-    bottom: 0;
-    height: 15%;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(204, 204, 204, 0) 0%, #cccccc 75%, #cccccc 100%); }
-    .blogpost .post-fader a {
-      display: block;
-      position: relative;
-      text-align: center;
-      top: 60%;
-      font-size: 1.25em;
-      color: #000; }
+  .blogpost .post-footer {
+    text-align: right; }
+    .blogpost .post-footer span {
+      margin-left: 15px; }
 
 .sidebar {
   width: 100%;
