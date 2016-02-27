@@ -356,13 +356,24 @@ th {
 * {
   box-sizing: border-box; }
 
+.blog-title h1, .blog-title h2 {
+  font-family: "Cantarell", sans-serif;
+  color: #ccc;
+  font-style: italic;
+  text-shadow: 3px 3px 20px #000; }
+
 a {
   text-decoration: none; }
+  a:hover {
+    color: #A08171; }
+
+.blog-title h1 {
+  font-size: 2.4em; }
+.blog-title h2 {
+  font-weight: 100; }
 
 .post-title {
   color: #000; }
-  .post-title:hover {
-    color: #237; }
 
 .blog-text p {
   line-height: 2em; }
@@ -370,6 +381,9 @@ a {
 .comments p,
 .comments span {
   font-size: 0.8em; }
+
+footer a {
+  color: #ccc; }
 
 .comments {
   width: 90%;
@@ -403,26 +417,40 @@ header {
   height: 75vh;
   padding-top: 50px;
   background: #ccc;
+  background-image: url("http://miriadna.com/desctopwalls/images/max/The-marsh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+  background-position: bottom;
   text-align: center; }
   header nav {
     margin: auto;
-    background: #333; }
+    background: rgba(0, 0, 0, 0.5); }
     header nav a {
       display: inline-block;
       padding: 20px 5%;
       text-decoration: none;
-      color: #fff; }
+      color: #ccc;
+      transition: background-color 1s; }
+      header nav a:hover {
+        background: black;
+        transition: background-color 1s; }
   header .blog-title {
     margin: 20% auto 0 auto; }
 
 main {
   min-height: 800px;
-  background: #999; }
+  background: #333;
+  background-image: url("http://www.kval.us/wp-content/uploads/2014/12/rich-born-Foggy-Lagoon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply; }
 
 section {
   width: 100%;
   min-height: 700px;
-  background: #888;
   padding: 2%; }
   @media screen and (min-width: 900px) {
     section {
@@ -431,7 +459,7 @@ section {
 
 .blogpost {
   position: relative;
-  background: #aaa;
+  background: #666;
   min-height: 500px;
   padding-bottom: 24px;
   margin-top: 5%; }
@@ -441,7 +469,7 @@ section {
     padding: 15px 0;
     margin: 0; }
   .blogpost .featured-image {
-    max-width: 100%; }
+    width: 100%; }
   .blogpost .post-data {
     padding: 15px 5%; }
     .blogpost .post-data span {
@@ -464,11 +492,21 @@ section {
     .blogpost .post-footer span {
       margin-left: 15px; }
 
+.sidebar .about-blogger, .sidebar .recent-posts, .sidebar .categories, .sidebar .tags {
+  width: 75%;
+  padding: 2%;
+  margin: 5% auto;
+  background-color: #333;
+  background-image: -webkit-linear-gradient(bottom, #333 0%, #ccc 100%);
+  background-image: linear-gradient(to top,#333 0%, #ccc 100%); }
+  @media screen and (min-width: 900px) {
+    .sidebar .about-blogger, .sidebar .recent-posts, .sidebar .categories, .sidebar .tags {
+      width: 90%; } }
+
 .sidebar {
   width: 100%;
   padding: 2%;
-  min-height: 400px;
-  background: #444; }
+  min-height: 400px; }
   @media screen and (min-width: 900px) {
     .sidebar {
       width: 33.33%;
@@ -477,15 +515,8 @@ section {
   .sidebar h2 {
     text-align: center; }
   .sidebar .about-blogger {
-    border-top: 10px solid #000;
-    width: 75%;
-    padding: 2%;
-    margin: 2% auto;
-    background: #ddd;
+    border-top: 10px solid #A08171;
     margin-top: 0; }
-    @media screen and (min-width: 900px) {
-      .sidebar .about-blogger {
-        width: 90%; } }
     .sidebar .about-blogger .avatar {
       width: 33.33%;
       margin: auto; }
@@ -493,47 +524,36 @@ section {
         width: 100%;
         border-radius: 50%; }
   .sidebar .recent-posts {
-    border-top: 10px solid #000;
-    width: 75%;
-    padding: 2%;
-    margin: 2% auto;
-    background: #ddd; }
-    @media screen and (min-width: 900px) {
-      .sidebar .recent-posts {
-        width: 90%; } }
+    border-top: 10px solid #A08D71; }
     .sidebar .recent-posts ul {
       list-style: none; }
       .sidebar .recent-posts ul li {
         margin: 10px 0; }
   .sidebar .categories {
-    border-top: 10px solid #000;
-    width: 75%;
-    padding: 2%;
-    margin: 2% auto;
-    background: #ddd; }
-    @media screen and (min-width: 900px) {
-      .sidebar .categories {
-        width: 90%; } }
+    border-top: 10px solid #4B6A60; }
     .sidebar .categories ul {
       list-style: none; }
       .sidebar .categories ul li {
         margin: 10px 0; }
   .sidebar .tags {
-    border-top: 10px solid #000;
-    width: 75%;
-    padding: 2%;
-    margin: 2% auto;
-    background: #ddd; }
-    @media screen and (min-width: 900px) {
-      .sidebar .tags {
-        width: 90%; } }
+    border-top: 10px solid #4C5A68; }
     .sidebar .tags ul {
       list-style: none; }
       .sidebar .tags ul li {
         margin: 10px 0; }
 
 footer {
-  min-height: 300px;
-  background: #555; }
+  position: relative;
+  background: #000; }
+  footer .social-icons {
+    padding: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin: auto; }
+    footer .social-icons a {
+      margin: 0 20px;
+      font-size: 2em; }
 
 /*# sourceMappingURL=main.css.map */

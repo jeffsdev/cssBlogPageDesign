@@ -1,9 +1,6 @@
-@mixin sidebar-box {
-  width: 75%;
-  padding: 2%;
-  margin: 2% auto;
-  background: #ddd;
-  @media screen and (min-width: 900px) {
-    width: 90%;
-  }
+@mixin backg-img-cover($imgurl) {
+  background-image: url('#{$imgurl}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

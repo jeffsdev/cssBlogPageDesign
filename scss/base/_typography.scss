@@ -1,12 +1,30 @@
+%header-font {
+  font-family: $cantarell-stack;
+  color: $fog-white;
+  font-style: italic;
+  text-shadow: 3px 3px 20px $black;
+}
+
 a {
   text-decoration: none;
+  &:hover {
+    color: $mushroom;
+  }
+}
+
+.blog-title {
+  h1 {
+    @extend %header-font;
+    font-size: 2.4em;
+  }
+  h2 {
+    @extend %header-font;
+    font-weight: 100;
+  }
 }
 
 .post-title {
   color: $black;
-  &:hover {
-    color: #237;
-  }
 }
 
 .blog-text {
@@ -19,5 +37,11 @@ a {
   p,
   span {
     font-size: 0.8em;
+  }
+}
+
+footer {
+  a {
+    color: $fog-white;
   }
 }

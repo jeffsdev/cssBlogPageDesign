@@ -1,18 +1,19 @@
 .blogpost {
   position: relative;
-  background: #aaa;
+  background: #666;
   min-height: 500px;
   padding-bottom: 24px;
   margin-top: 5%;
   &:first-child {
     margin-top: 0;
   }
+  // border-bottom: 2px solid $murkyblue;
   h1 {
     padding: 15px 0;
     margin: 0;
   }
   .featured-image {
-    max-width: 100%;
+    width: 100%;
   }
   .post-data {
     padding: 15px 5%;
