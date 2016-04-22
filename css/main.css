@@ -438,6 +438,12 @@ header {
         transition: background-color 1s; }
   header .blog-title {
     margin: 20% auto 0 auto; }
+    @media screen and (max-height: 1024px) {
+      header .blog-title {
+        margin: 10% auto 0 auto; } }
+    @media screen and (max-height: 640px) {
+      header .blog-title {
+        margin: 5% auto 0 auto; } }
 
 main {
   min-height: 800px;
